@@ -11,9 +11,10 @@ ken的个人博客
 　2.[vue-router-2　编程式导航和命名路由](https://github.com/lazyken/blog/issues/3)     
 ## Ajax
 　1.[XHR对象与HTTP请求](https://github.com/lazyken/blog/issues/12)    
-　2.[XMLHttpRequest 2级与进度事件](https://github.com/lazyken/blog/issues/13)    
-  3.[跨域资源共享](https://github.com/lazyken/blog/issues/14)
+　2.[XMLHttpRequest 2级与进度事件](https://github.com/lazyken/blog/issues/13)    
+　3.[跨域资源共享](https://github.com/lazyken/blog/issues/14)
 ## 其他
 　1.[学习ES6（常用ES6语法积累）](https://github.com/lazyken/blog/issues/9)    
 　2.[js查缺补漏](https://github.com/lazyken/blog/issues/10)    
 　3.[Markdown语法简要](https://github.com/lazyken/blog/issues/1)    
+ 
