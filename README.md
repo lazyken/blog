@@ -18,4 +18,4 @@ ken的个人博客
 　2.[js查缺补漏](https://github.com/lazyken/blog/issues/10)    
 　3.[Markdown语法简要](https://github.com/lazyken/blog/issues/1)    
 ## css
- 1.[CSS3 object-positon/object-fit](https://github.com/lazyken/blog/issues/15)
+　1.[CSS3 object-positon/object-fit](https://github.com/lazyken/blog/issues/15)
