@@ -14,8 +14,9 @@ ken的个人博客
 　2.[XMLHttpRequest 2级与进度事件](https://github.com/lazyken/blog/issues/13)    
 　3.[跨域资源共享](https://github.com/lazyken/blog/issues/14)
 ## 其他
-　1.[学习ES6（常用ES6语法积累）](https://github.com/lazyken/blog/issues/9)    
-　2.[js查缺补漏](https://github.com/lazyken/blog/issues/10)    
-　3.[Markdown语法简要](https://github.com/lazyken/blog/issues/1)    
+　1.[上拉加载的简单实现](https://github.com/lazyken/blog/issues/16)    
+　2.[学习ES6（常用ES6语法积累）](https://github.com/lazyken/blog/issues/9)    
+　3.[js查缺补漏](https://github.com/lazyken/blog/issues/10)    
+　4.[Markdown语法简要](https://github.com/lazyken/blog/issues/1)    
 ## css
 　1.[CSS3 object-positon/object-fit](https://github.com/lazyken/blog/issues/15)
