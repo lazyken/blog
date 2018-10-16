@@ -18,5 +18,6 @@ ken的个人博客
 　2.[学习ES6（常用ES6语法积累）](https://github.com/lazyken/blog/issues/9)    
 　3.[js查缺补漏](https://github.com/lazyken/blog/issues/10)    
 　4.[Markdown语法简要](https://github.com/lazyken/blog/issues/1)    
+　5.[git命令使用记录](https://github.com/lazyken/blog/issues/17)    
 ## css
 　1.[CSS3 object-positon/object-fit](https://github.com/lazyken/blog/issues/15)
