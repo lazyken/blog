@@ -19,5 +19,6 @@ ken的个人博客
 　3.[js查缺补漏](https://github.com/lazyken/blog/issues/10)    
 　4.[Markdown语法简要](https://github.com/lazyken/blog/issues/1)    
 　5.[git命令使用记录](https://github.com/lazyken/blog/issues/17)    
+　6.[关于验证码图片转createObjectURL](https://github.com/lazyken/blog/issues/18)    
 ## css
 　1.[CSS3 object-positon/object-fit](https://github.com/lazyken/blog/issues/15)
