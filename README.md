@@ -1,5 +1,7 @@
 # ken 的个人博客
 
+19.[typeScript中，函数返回值类型中的is语法的作用](https://github.com/lazyken/blog/issues/19)
+
 ## 2019
 
 18.webpack 系列 1——从零开始一个 webpack 项目
