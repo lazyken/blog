@@ -2,7 +2,8 @@
 ## 红宝书要点摘要系列
 1.[函数和构造函数]()
 ## 未分类
-23.[50道css基础面试题(含答案)](https://github.com/lazyken/blog/issues/23)    
+24.[EventLoop与浏览器渲染](https://github.com/lazyken/blog/issues/24)    
+23.[50道css基础面试题(含答案)（未完成）](https://github.com/lazyken/blog/issues/23)    
 22.[Flex语法总结](https://github.com/lazyken/blog/issues/22)    
 21.[总结：React性能优化与Immutable数据流](https://github.com/lazyken/blog/issues/21)    
 20.[useMemo](https://github.com/lazyken/blog/issues/20)    
