@@ -6,8 +6,8 @@
 22.[Flex语法总结](https://github.com/lazyken/blog/issues/22)    
 21.[总结：React性能优化与Immutable数据流](https://github.com/lazyken/blog/issues/21)    
 20.[useMemo](https://github.com/lazyken/blog/issues/20)    
-19.[typeScript中，函数返回值类型中的is语法的作用](https://github.com/lazyken/blog/issues/19)
-18.webpack 系列 1——从零开始一个 webpack 项目
+19.[typeScript中，函数返回值类型中的is语法的作用](https://github.com/lazyken/blog/issues/19)    
+18.webpack 系列 1——从零开始一个 webpack 项目    
 17.[开始：一个简单的 Vuex 计数应用](https://github.com/lazyken/blog/issues/4)  
 16.[state 的基础用法](https://github.com/lazyken/blog/issues/5)  
 15.[可复用的 getter](https://github.com/lazyken/blog/issues/7)\*  
