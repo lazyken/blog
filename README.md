@@ -1,6 +1,7 @@
 # ken 的个人博客
 ## 红宝书要点摘要系列
-1.[函数和构造函数](https://github.com/lazyken/blog/issues/25)
+1.[函数和构造函数](https://github.com/lazyken/blog/issues/25)    
+2.[原型和原型连](https://github.com/lazyken/blog/issues/26).   
 ## 未分类
 24.[EventLoop与浏览器渲染](https://github.com/lazyken/blog/issues/24)    
 23.[50道css基础面试题(含答案)（未完成）](https://github.com/lazyken/blog/issues/23)    
