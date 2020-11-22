@@ -1,0 +1,30 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "ken的blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lazyken/blog.git"
+  },
+  "keywords": [],
+  "author": "lazyken",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lazyken/blog/issues"
+  },
+  "homepage": "https://github.com/lazyken/blog#readme",
+  "devDependencies": {
+    "commitizen": "^4.2.2",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
