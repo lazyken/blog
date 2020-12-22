@@ -31,8 +31,13 @@
 22. [Flex 语法总结](https://github.com/lazyken/blog/issues/22)
 23. [50 道 css 基础面试题(含答案)（未完成）](https://github.com/lazyken/blog/issues/23)
 24. [EventLoop 与浏览器渲染](https://github.com/lazyken/blog/issues/24)
+25. [总结 React 更新和优化都有哪些方式](https://github.com/lazyken/blog/issues/29)
+26. [React Hooks 基本用法和理解](https://github.com/lazyken/blog/issues/30)
 
 # TODOLIST
+
+**BFC**
+**z-index**
 
 ## 专题系列：
 
