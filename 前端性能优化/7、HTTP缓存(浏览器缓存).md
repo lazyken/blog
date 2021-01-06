@@ -1,6 +1,7 @@
 本文搬运自：  
 1、[彻底理解浏览器的缓存机制](https://zhuanlan.zhihu.com/p/53507705)  
 2、[强缓存和协商缓存](https://www.jianshu.com/p/fb59c770160c)
+3、[谈谈前端缓存](http://47.98.159.95/my_blog/blogs/perform/001.html#service-worker)
 
 # 概述
 
