@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>事件冒泡</title>
+</head>
+
+<body>
+  <div>
+    <p id="parEle">我是父元素 <span id="sonEle">我是子元素</span></p>
+  </div>
+</body>
+
+</html>
+<script type="text/javascript">
+  var sonEle = document.getElementById('sonEle');
+  var parEle = document.getElementById('parEle');
+
+  parEle.addEventListener('click', function () {
+    alert('父级 冒泡');
+  }, false);
+  parEle.addEventListener('click', function () {
+    alert('父级 捕获');
+  }, true);
+
+  sonEle.addEventListener('click', function () {
+    alert('子级冒泡');
+  }, false);
+  sonEle.addEventListener('click', function () {
+    alert('子级捕获');
+  }, true);
+
+</script>
