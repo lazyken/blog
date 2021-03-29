@@ -4,12 +4,20 @@
 
 ## CSS
 
+- [浮动布局与清除浮动](https://github.com/lazyken/blog/blob/master/2.CSS/%E6%B5%AE%E5%8A%A8%E5%B8%83%E5%B1%80%E4%B8%8E%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8.md)
+- [外边距折叠](https://github.com/lazyken/blog/blob/master/2.CSS/%E5%A4%96%E8%BE%B9%E8%B7%9D%E6%8A%98%E5%8F%A0.md)
+- [CSS 层叠上下文](https://github.com/lazyken/blog/blob/master/2.CSS/CSS%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87.md)
+- [CSS 的 BFC 问题](https://github.com/lazyken/blog/blob/master/2.CSS/CSS%E7%9A%84BFC%E9%97%AE%E9%A2%98.md)
 - [50 道 css 基础面试题(含答案)（未完成）](https://github.com/lazyken/blog/issues/23)
 - [Flex 语法总结](https://github.com/lazyken/blog/issues/22)
 - [CSS3 object-positon/object-fit](https://github.com/lazyken/blog/issues/15)
 
 ## JavaScript
 
+- [数据类型](https://github.com/lazyken/blog/blob/master/3.Javascript/01.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.md)
+- [存储空间和垃圾回收](https://github.com/lazyken/blog/blob/master/3.Javascript/02.%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4%E5%92%8C%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6.md)
+- [执行上下文、作用域、闭包](https://github.com/lazyken/blog/blob/master/3.Javascript/03.%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E3%80%81%E9%97%AD%E5%8C%85.md)
+- [数字计算处理常见函数](https://github.com/lazyken/blog/blob/master/3.Javascript/51.%E6%95%B0%E5%AD%97%E8%AE%A1%E7%AE%97%E5%A4%84%E7%90%86%E5%B8%B8%E8%A7%81%E5%87%BD%E6%95%B0.md)
 - [原型和原型连](https://github.com/lazyken/blog/issues/26)
 - [函数和构造函数](https://github.com/lazyken/blog/issues/25)
 - [EventLoop 与浏览器渲染](https://github.com/lazyken/blog/issues/24)
@@ -31,8 +39,14 @@
 
 ## 前端性能
 
+- [前端性能](https://github.com/lazyken/blog/tree/master/8.%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96)
+
 ## 专题系列
 
+- [节流和防抖](https://github.com/lazyken/blog/tree/master/9.%E4%B8%93%E9%A2%98%E7%B3%BB%E5%88%97/%E8%8A%82%E6%B5%81%E5%92%8C%E9%98%B2%E6%8A%96)
+- [深拷贝和浅拷贝](https://github.com/lazyken/blog/tree/master/9.%E4%B8%93%E9%A2%98%E7%B3%BB%E5%88%97/%E6%B5%85%E6%B7%B1%E6%8B%B7%E8%B4%9D)
+- [按需加载](https://github.com/lazyken/blog/blob/master/9.%E4%B8%93%E9%A2%98%E7%B3%BB%E5%88%97/%E6%8C%89%E9%9C%80%E5%8A%A0%E8%BD%BD.md)
+- [图片懒加载](https://github.com/lazyken/blog/blob/master/9.%E4%B8%93%E9%A2%98%E7%B3%BB%E5%88%97/%E5%9B%BE%E7%89%87%E6%87%92%E5%8A%A0%E8%BD%BD.md)
 - [关于验证码图片转 createObjectURL](https://github.com/lazyken/blog/issues/18)
 - [上拉加载的简单实现](https://github.com/lazyken/blog/issues/16)
 
@@ -67,9 +81,6 @@
 
 # TODOLIST
 
-**BFC**
-**z-index**
-
 ### 专题系列：
 
 - 前端路由
@@ -86,15 +97,11 @@
 
 - 代码规范
 
-- 前端缓存
-
 - 版本管理
 
 - 监控（性能监控，错误监控）
 
 ### webpack 系列：
-
-- tree shaking
 
 - postcss
 
