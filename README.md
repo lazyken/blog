@@ -17,6 +17,7 @@
 - [数据类型](https://github.com/lazyken/blog/blob/master/03.Javascript/01.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.md)
 - [存储空间和垃圾回收](https://github.com/lazyken/blog/blob/master/03.Javascript/02.%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4%E5%92%8C%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6.md)
 - [执行上下文、作用域、闭包](https://github.com/lazyken/blog/blob/master/03.Javascript/03.%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%B8%8B%E6%96%87%E3%80%81%E4%BD%9C%E7%94%A8%E5%9F%9F%E3%80%81%E9%97%AD%E5%8C%85.md)
+- [this 的指向](https://github.com/lazyken/blog/blob/master/03.Javascript/04.this%E7%9A%84%E6%8C%87%E5%90%91.md)
 - [数字计算处理常见函数](https://github.com/lazyken/blog/blob/master/03.Javascript/51.%E6%95%B0%E5%AD%97%E8%AE%A1%E7%AE%97%E5%A4%84%E7%90%86%E5%B8%B8%E8%A7%81%E5%87%BD%E6%95%B0.md)
 - [原型和原型连](https://github.com/lazyken/blog/issues/26)
 - [函数和构造函数](https://github.com/lazyken/blog/issues/25)
