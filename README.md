@@ -4,20 +4,20 @@
 
 ## CSS
 
-- [CSS3 object-positon/object-fit](https://github.com/lazyken/blog/issues/15)
-- [Flex 语法总结](https://github.com/lazyken/blog/issues/22)
 - [50 道 css 基础面试题(含答案)（未完成）](https://github.com/lazyken/blog/issues/23)
+- [Flex 语法总结](https://github.com/lazyken/blog/issues/22)
+- [CSS3 object-positon/object-fit](https://github.com/lazyken/blog/issues/15)
 
 ## JavaScript
 
-- [EventLoop 与浏览器渲染](https://github.com/lazyken/blog/issues/24)
-- [函数和构造函数](https://github.com/lazyken/blog/issues/25)
 - [原型和原型连](https://github.com/lazyken/blog/issues/26)
-- [js 查缺补漏](https://github.com/lazyken/blog/issues/10)
-- [学习 ES6（常用 ES6 语法积累）](https://github.com/lazyken/blog/issues/9)
+- [函数和构造函数](https://github.com/lazyken/blog/issues/25)
+- [EventLoop 与浏览器渲染](https://github.com/lazyken/blog/issues/24)
 - [跨域资源共享](https://github.com/lazyken/blog/issues/14)
 - [XMLHttpRequest 2 级与进度事件](https://github.com/lazyken/blog/issues/13)
 - [XHR 对象与 HTTP 请求](https://github.com/lazyken/blog/issues/12)
+- [js 查缺补漏](https://github.com/lazyken/blog/issues/10)
+- [学习 ES6（常用 ES6 语法积累）](https://github.com/lazyken/blog/issues/9)
 
 ## TypeScript
 
@@ -42,19 +42,19 @@
 
 ## Vue
 
-- [vue-router-2 　编程式导航和命名路由](https://github.com/lazyken/blog/issues/3)
 - [vue-router-1 　基础](https://github.com/lazyken/blog/issues/2)
-- [支持异步的 Action](https://github.com/lazyken/blog/issues/11)
-- [Mutation](https://github.com/lazyken/blog/issues/8)
-- [可复用的 getter](https://github.com/lazyken/blog/issues/7)\*
-- [state 的基础用法](https://github.com/lazyken/blog/issues/5)
+- [vue-router-2 　编程式导航和命名路由](https://github.com/lazyken/blog/issues/3)
 - [开始：一个简单的 Vuex 计数应用](https://github.com/lazyken/blog/issues/4)
+- [state 的基础用法](https://github.com/lazyken/blog/issues/5)
+- [可复用的 getter](https://github.com/lazyken/blog/issues/7)\*
+- [Mutation](https://github.com/lazyken/blog/issues/8)
+- [支持异步的 Action](https://github.com/lazyken/blog/issues/11)
 
 ## React
 
 - [useMemo](https://github.com/lazyken/blog/issues/20)
-- [总结：React 性能优化与 Immutable 数据流](https://github.com/lazyken/blog/issues/21)
-- [总结 React 更新和优化都有哪些方式](https://github.com/lazyken/blog/issues/29)
+- [总结: React 性能优化与 Immutable 数据流](https://github.com/lazyken/blog/issues/21)
+- [总结: React 更新和优化都有哪些方式](https://github.com/lazyken/blog/issues/29)
 - [React Hooks 基本用法和理解](https://github.com/lazyken/blog/issues/30)
 
 ## 代码规范 & 文档格式化实践
