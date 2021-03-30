@@ -4,6 +4,8 @@
   "description": "ken的blog",
   "main": "index.js",
   "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "commit": "git-cz"
   },
@@ -20,7 +22,8 @@
   "homepage": "https://github.com/lazyken/blog#readme",
   "devDependencies": {
     "commitizen": "^4.2.2",
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-conventional-changelog": "^3.3.0",
+    "vuepress": "^1.8.2"
   },
   "config": {
     "commitizen": {
