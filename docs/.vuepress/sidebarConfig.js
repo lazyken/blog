@@ -11,7 +11,7 @@ const sidebar = {
         '/front-end/03.Javascript/05.new的过程.md',
         '/front-end/03.Javascript/06.EventLoop.md',
         '/front-end/03.Javascript/07.事件.md',
-        '/front-end/03.Javascript/08.prototype与遍历.md',
+        '/front-end/03.Javascript/08.property与遍历.md',
         '/front-end/03.Javascript/51.数字计算处理常见函数.md'
       ]
     },
