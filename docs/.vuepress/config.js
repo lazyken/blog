@@ -3,9 +3,8 @@ module.exports = {
   title: 'lazyken',
   description: '日积跬步，足以致千里！',
   base: '/blog/',
-  repo: 'lazyken/blog',
-  repoLabel: 'Github',
   themeConfig: {
+    repo: 'lazyken/blog',
     nav: [
       { text: '前端', link: '/front-end/03.Javascript/01.数据类型.md' },
       { text: '数据结构与算法', link: '/algorithm/1.数组和字符串/1.数组简介.md' },
