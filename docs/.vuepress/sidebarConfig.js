@@ -6,12 +6,15 @@ const sidebar = {
       children: [
         '/front-end/03.Javascript/01.数据类型.md',
         '/front-end/03.Javascript/02.存储空间和垃圾回收.md',
+        '/front-end/03.Javascript/11.原型和原型链.md',
         '/front-end/03.Javascript/03.执行上下文、作用域、闭包.md',
         '/front-end/03.Javascript/04.this的指向.md',
         '/front-end/03.Javascript/05.new的过程.md',
         '/front-end/03.Javascript/06.EventLoop.md',
         '/front-end/03.Javascript/07.事件.md',
         '/front-end/03.Javascript/08.property与遍历.md',
+        '/front-end/03.Javascript/09.块级作用域.md',
+        '/front-end/03.Javascript/10.Set和Map数据结构.md',
         '/front-end/03.Javascript/51.数字计算处理常见函数.md'
       ]
     },
@@ -23,7 +26,8 @@ const sidebar = {
         '/front-end/02.CSS/01.浮动布局与清除浮动.md',
         '/front-end/02.CSS/02.外边距折叠.md',
         '/front-end/02.CSS/03.CSS层叠上下文.md',
-        '/front-end/02.CSS/04.CSS的BFC问题.md'
+        '/front-end/02.CSS/04.CSS的BFC问题.md',
+        '/front-end/02.CSS/05.CSS优先级.md'
       ]
     },
     {
