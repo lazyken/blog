@@ -118,7 +118,6 @@ const sidebar = {
     '/interview/数组扁平化.md'
   ],
   '/node/': ['/node/'],
-  '/reading-and-life/': ['/reading-and-life/'],
   '/computer-base/': [
     {
       title: '计算机基础',
@@ -129,7 +128,9 @@ const sidebar = {
         '/computer-base/IEEE754浮点数运算标准.md'
       ]
     }
-  ]
+  ],
+  '/book/': ['/book/'],
+  '/life/': ['/life/']
 };
 
 module.exports = { sidebar };
