@@ -129,7 +129,16 @@ const sidebar = {
       ]
     }
   ],
-  '/book/': ['/book/'],
+  '/book/': [
+    {
+      title: '阮一峰ES6入门',
+      collapsable: false,
+      children: [
+        // prettier-ignore
+        '/book/01.阮一峰ES6/02.let和const命令.md'
+      ]
+    }
+  ],
   '/life/': ['/life/']
 };
 

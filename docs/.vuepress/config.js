@@ -15,7 +15,7 @@ module.exports = {
           { text: 'webpack', link: '/webpack/' },
           { text: 'Node', link: '/node/' },
           { text: '计算机基础', link: '/computer-base/比特、位数、字节.md' },
-          { text: '技术书籍', link: '/book/' },
+          { text: '技术书籍', link: '/book/01.阮一峰ES6/02.let和const命令.md' },
           { text: '生活随记', link: '/life/' }
         ]
       }
