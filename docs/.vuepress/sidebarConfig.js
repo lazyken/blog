@@ -11,7 +11,7 @@ const sidebar = {
         '/front-end/03.Javascript/04.this的指向.md',
         '/front-end/03.Javascript/05.new的过程.md',
         '/front-end/03.Javascript/06.EventLoop.md',
-        '/front-end/03.Javascript/07.事件.md',
+        '/front-end/03.Javascript/07.DOM事件.md',
         '/front-end/03.Javascript/08.property与遍历.md',
         '/front-end/03.Javascript/09.块级作用域.md',
         '/front-end/03.Javascript/10.Set和Map数据结构.md',
@@ -60,11 +60,38 @@ const sidebar = {
       ]
     },
     {
+      title: '移动端', // 必要的
+      collapsable: false, // 可选的, 默认值是 true,
+      children: [
+        // prettier-ignore
+        '/front-end/15.移动端/01.移动端1px问题.md'
+      ]
+    },
+    {
+      title: '前端性能优化', // 必要的
+      collapsable: false, // 可选的, 默认值是 true,
+      children: [
+        // prettier-ignore
+        '/front-end/08.前端性能优化/01.开篇.md',
+        '/front-end/08.前端性能优化/02.网络层—网络优化.md',
+        '/front-end/08.前端性能优化/03.网络层—资源优化.md',
+        '/front-end/08.前端性能优化/04.图片质量与性能优化.md',
+        '/front-end/08.前端性能优化/05.构建速度优化.md',
+        '/front-end/08.前端性能优化/06.HTTP压缩之gzip压缩.md',
+        '/front-end/08.前端性能优化/07.HTTP缓存.md',
+        '/front-end/08.前端性能优化/08.本地储存.md',
+        '/front-end/08.前端性能优化/09.CDN缓存与回源.md',
+        '/front-end/08.前端性能优化/10.服务端渲染.md'
+      ]
+    },
+    {
       title: '其他', // 必要的
       collapsable: false, // 可选的, 默认值是 true,
       children: [
         // prettier-ignore
-        {title:'Markdown语法简要',path:'/front-end/14.其他/Markdown语法简要.md'}
+        '/front-end/14.其他/01.像素与分辨率.md',
+        '/front-end/14.其他/02.设备像素、CSS像素、viewport.md',
+        { title: 'Markdown语法简要', path: '/front-end/14.其他/Markdown语法简要.md' }
       ]
     }
   ],
