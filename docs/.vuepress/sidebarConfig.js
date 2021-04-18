@@ -85,6 +85,15 @@ const sidebar = {
       ]
     },
     {
+      title: 'network', // 必要的
+      collapsable: false, // 可选的, 默认值是 true,
+      children: [
+        // prettier-ignore
+        '/front-end/06.网络协议/01.HTTP1.md',
+        '/front-end/06.网络协议/02.HTTP2.md'
+      ]
+    },
+    {
       title: '其他', // 必要的
       collapsable: false, // 可选的, 默认值是 true,
       children: [
