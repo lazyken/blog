@@ -12,7 +12,7 @@ module.exports = {
       {
         text: '更多',
         items: [
-          { text: 'webpack', link: '/webpack/' },
+          { text: 'webpack', link: '/webpack/热更新hmr.md' },
           { text: 'Node', link: '/node/' },
           { text: '计算机基础', link: '/computer-base/比特、位数、字节.md' },
           { text: '技术书籍', link: '/book/01.阮一峰ES6/02.let和const命令.md' },

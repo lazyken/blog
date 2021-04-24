@@ -56,7 +56,8 @@ const sidebar = {
       collapsable: false, // 可选的, 默认值是 true,
       children: [
         // prettier-ignore
-        '/front-end/10.git/git命令.md'
+        '/front-end/10.git/git命令.md',
+        '/front-end/10.git/commit规范.md'
       ]
     },
     {
@@ -104,7 +105,7 @@ const sidebar = {
       ]
     }
   ],
-  '/webpack/': ['/webpack/'],
+  '/webpack/': ['/webpack/热更新hmr.md'],
   '/algorithm/': [
     {
       title: '数组和字符串',
@@ -151,7 +152,11 @@ const sidebar = {
     '/interview/scheduler类.md',
     '/interview/封装重试函数.md',
     '/interview/数组去重.md',
-    '/interview/数组扁平化.md'
+    '/interview/数组扁平化.md',
+    '/interview/_.get.md',
+    '/interview/生成验证码.md',
+    '/interview/实现trim方法.md',
+    '/interview/compareVersion'
   ],
   '/node/': ['/node/'],
   '/computer-base/': [
