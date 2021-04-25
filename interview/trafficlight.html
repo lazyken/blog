@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>手写红绿灯 | lazyken</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="日积跬步，足以致千里！">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.dab10465.css" as="style"><link rel="preload" href="/blog/assets/js/app.700e665d.js" as="script"><link rel="preload" href="/blog/assets/js/2.226257d3.js" as="script"><link rel="preload" href="/blog/assets/js/78.fc53d4aa.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.548bce8a.js"><link rel="prefetch" href="/blog/assets/js/11.ed08da4e.js"><link rel="prefetch" href="/blog/assets/js/12.8d25f27b.js"><link rel="prefetch" href="/blog/assets/js/13.7ad2bd62.js"><link rel="prefetch" href="/blog/assets/js/14.d69edb7f.js"><link rel="prefetch" href="/blog/assets/js/15.525c8255.js"><link rel="prefetch" href="/blog/assets/js/16.e13521f4.js"><link rel="prefetch" href="/blog/assets/js/17.6214eb25.js"><link rel="prefetch" href="/blog/assets/js/18.db56068f.js"><link rel="prefetch" href="/blog/assets/js/19.e78e566b.js"><link rel="prefetch" href="/blog/assets/js/20.63e59468.js"><link rel="prefetch" href="/blog/assets/js/21.555ad225.js"><link rel="prefetch" href="/blog/assets/js/22.f2fdebcc.js"><link rel="prefetch" href="/blog/assets/js/23.30d44650.js"><link rel="prefetch" href="/blog/assets/js/24.afcc61e3.js"><link rel="prefetch" href="/blog/assets/js/25.4e0b4c2d.js"><link rel="prefetch" href="/blog/assets/js/26.b1041a6b.js"><link rel="prefetch" href="/blog/assets/js/27.425cb3be.js"><link rel="prefetch" href="/blog/assets/js/28.4d11222c.js"><link rel="prefetch" href="/blog/assets/js/29.39c3ef07.js"><link rel="prefetch" href="/blog/assets/js/3.46bed7b4.js"><link rel="prefetch" href="/blog/assets/js/30.b3e9c558.js"><link rel="prefetch" href="/blog/assets/js/31.b244a10b.js"><link rel="prefetch" href="/blog/assets/js/32.32a5c4a8.js"><link rel="prefetch" href="/blog/assets/js/33.5145017d.js"><link rel="prefetch" href="/blog/assets/js/34.2c83e827.js"><link rel="prefetch" href="/blog/assets/js/35.acba4f10.js"><link rel="prefetch" href="/blog/assets/js/36.2899737c.js"><link rel="prefetch" href="/blog/assets/js/37.f87c4469.js"><link rel="prefetch" href="/blog/assets/js/38.64f6d518.js"><link rel="prefetch" href="/blog/assets/js/39.48277e45.js"><link rel="prefetch" href="/blog/assets/js/4.01a6e409.js"><link rel="prefetch" href="/blog/assets/js/40.605a9315.js"><link rel="prefetch" href="/blog/assets/js/41.78c72b40.js"><link rel="prefetch" href="/blog/assets/js/42.d49c1f53.js"><link rel="prefetch" href="/blog/assets/js/43.e878d0b6.js"><link rel="prefetch" href="/blog/assets/js/44.7e09e9ce.js"><link rel="prefetch" href="/blog/assets/js/45.aa814431.js"><link rel="prefetch" href="/blog/assets/js/46.3c8c16b9.js"><link rel="prefetch" href="/blog/assets/js/47.4a76a139.js"><link rel="prefetch" href="/blog/assets/js/48.646f1db3.js"><link rel="prefetch" href="/blog/assets/js/49.420e49c3.js"><link rel="prefetch" href="/blog/assets/js/5.ced10b63.js"><link rel="prefetch" href="/blog/assets/js/50.ec1b1bd4.js"><link rel="prefetch" href="/blog/assets/js/51.6a7f7f8b.js"><link rel="prefetch" href="/blog/assets/js/52.8acb19a8.js"><link rel="prefetch" href="/blog/assets/js/53.91921959.js"><link rel="prefetch" href="/blog/assets/js/54.d2d6c624.js"><link rel="prefetch" href="/blog/assets/js/55.c7150909.js"><link rel="prefetch" href="/blog/assets/js/56.91bc4488.js"><link rel="prefetch" href="/blog/assets/js/57.07e76adc.js"><link rel="prefetch" href="/blog/assets/js/58.60f4a37b.js"><link rel="prefetch" href="/blog/assets/js/59.e7c159e8.js"><link rel="prefetch" href="/blog/assets/js/6.ea6da867.js"><link rel="prefetch" href="/blog/assets/js/60.b5c936d0.js"><link rel="prefetch" href="/blog/assets/js/61.b9ee13ae.js"><link rel="prefetch" href="/blog/assets/js/62.b29790dc.js"><link rel="prefetch" href="/blog/assets/js/63.fe061c94.js"><link rel="prefetch" href="/blog/assets/js/64.9bf0cc82.js"><link rel="prefetch" href="/blog/assets/js/65.870ecd29.js"><link rel="prefetch" href="/blog/assets/js/66.21d3cf96.js"><link rel="prefetch" href="/blog/assets/js/67.f7d2d7be.js"><link rel="prefetch" href="/blog/assets/js/68.333b2013.js"><link rel="prefetch" href="/blog/assets/js/69.3dfa15f7.js"><link rel="prefetch" href="/blog/assets/js/7.1b25ec18.js"><link rel="prefetch" href="/blog/assets/js/70.e846ed38.js"><link rel="prefetch" href="/blog/assets/js/71.02515b42.js"><link rel="prefetch" href="/blog/assets/js/72.dfba0d2e.js"><link rel="prefetch" href="/blog/assets/js/73.5ba9af34.js"><link rel="prefetch" href="/blog/assets/js/74.5a760cbf.js"><link rel="prefetch" href="/blog/assets/js/75.eb180a65.js"><link rel="prefetch" href="/blog/assets/js/76.a1ba4758.js"><link rel="prefetch" href="/blog/assets/js/77.ce0a4794.js"><link rel="prefetch" href="/blog/assets/js/79.8e35b677.js"><link rel="prefetch" href="/blog/assets/js/8.fe550850.js"><link rel="prefetch" href="/blog/assets/js/80.87a13347.js"><link rel="prefetch" href="/blog/assets/js/81.8dda61c0.js"><link rel="prefetch" href="/blog/assets/js/82.29880589.js"><link rel="prefetch" href="/blog/assets/js/83.3ba9a723.js"><link rel="prefetch" href="/blog/assets/js/84.c7ceb647.js"><link rel="prefetch" href="/blog/assets/js/85.5da07c21.js"><link rel="prefetch" href="/blog/assets/js/86.a0f2fe64.js"><link rel="prefetch" href="/blog/assets/js/87.2f221b5d.js"><link rel="prefetch" href="/blog/assets/js/88.34af8f70.js"><link rel="prefetch" href="/blog/assets/js/9.807958f4.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.dab10465.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">lazyken</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/front-end/03.Javascript/01.数据类型.html" class="nav-link">
+  前端
+</a></div><div class="nav-item"><a href="/blog/algorithm/1.数组和字符串/1.数组简介.html" class="nav-link">
+  数据结构与算法
+</a></div><div class="nav-item"><a href="/blog/interview/trafficlight.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  编程题
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/webpack/热更新hmr.html" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/blog/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/blog/computer-base/比特、位数、字节.html" class="nav-link">
+  计算机基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/book/01.阮一峰ES6/02.let和const命令.html" class="nav-link">
+  技术书籍
+</a></li><li class="dropdown-item"><!----> <a href="/blog/life/" class="nav-link">
+  生活随记
+</a></li></ul></div></div> <a href="https://github.com/lazyken/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/front-end/03.Javascript/01.数据类型.html" class="nav-link">
+  前端
+</a></div><div class="nav-item"><a href="/blog/algorithm/1.数组和字符串/1.数组简介.html" class="nav-link">
+  数据结构与算法
+</a></div><div class="nav-item"><a href="/blog/interview/trafficlight.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  编程题
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/webpack/热更新hmr.html" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/blog/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/blog/computer-base/比特、位数、字节.html" class="nav-link">
+  计算机基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/book/01.阮一峰ES6/02.let和const命令.html" class="nav-link">
+  技术书籍
+</a></li><li class="dropdown-item"><!----> <a href="/blog/life/" class="nav-link">
+  生活随记
+</a></li></ul></div></div> <a href="https://github.com/lazyken/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/blog/interview/trafficlight.html" aria-current="page" class="active sidebar-link">红绿灯</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/interview/trafficlight.html#题目描述" class="sidebar-link">题目描述</a></li></ul></li><li><a href="/blog/interview/useFetch.html" class="sidebar-link">自定义请求 Hook</a></li><li><a href="/blog/interview/promiseA+.html" class="sidebar-link">promiseA+</a></li><li><a href="/blog/interview/add(1)(2)(3).html" class="sidebar-link">add(1)(2)(3)</a></li><li><a href="/blog/interview/scheduler类.html" class="sidebar-link">Scheduler 类</a></li><li><a href="/blog/interview/封装重试函数.html" class="sidebar-link">封装重试函数</a></li><li><a href="/blog/interview/数组去重.html" class="sidebar-link">数组去重</a></li><li><a href="/blog/interview/数组扁平化.html" class="sidebar-link">数组扁平化</a></li><li><a href="/blog/interview/_.get.html" class="sidebar-link">简单实现 lodash 的 get 方法</a></li><li><a href="/blog/interview/生成验证码.html" class="sidebar-link">生成验证码</a></li><li><a href="/blog/interview/实现trim方法.html" class="sidebar-link">实现 trim 方法</a></li><li><a href="/blog/interview/compareVersion.html" class="sidebar-link">比较版本号</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="手写红绿灯"><a href="#手写红绿灯" class="header-anchor">#</a> 手写红绿灯</h1> <h2 id="题目描述"><a href="#题目描述" class="header-anchor">#</a> 题目描述</h2> <ol><li>信号灯控制器<br>
+用 React 实现一个信号灯（交通灯）控制器，要求：
+<ol><li>默认情况下，<br>
+1.1. 红灯亮 20 秒，并且最后 5 秒闪烁<br>
+1.2. 绿灯亮 20 秒，并且最后 5 秒闪烁<br>
+1.3. 黄灯亮 10 秒<br>
+1.4. 次序为 红-绿-黄-红-绿-黄</li> <li>灯的个数、颜色、持续时间、闪烁时间、灯光次序都可配置，如：<br>
+lights=[{color: '#fff', duration: 10000, twinkleDuration: 5000}, ... ]</li></ol></li></ol> <p><a href="https://stackblitz.com/edit/react-trafficlightitem" target="_blank" rel="noopener noreferrer">在线 demo<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> useState<span class="token punctuation">,</span> useEffect<span class="token punctuation">,</span> useRef <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> ReactDOM <span class="token keyword">from</span> <span class="token string">'react-dom'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">'./style.css'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">TrafficLightItem</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>lights<span class="token punctuation">,</span> setLights<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      id<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      color<span class="token operator">:</span> <span class="token string">'red'</span><span class="token punctuation">,</span>
+      duration<span class="token operator">:</span> <span class="token number">20000</span><span class="token punctuation">,</span>
+      count<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      twinkleDuration<span class="token operator">:</span> <span class="token number">5000</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      id<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      color<span class="token operator">:</span> <span class="token string">'green'</span><span class="token punctuation">,</span>
+      duration<span class="token operator">:</span> <span class="token number">20000</span><span class="token punctuation">,</span>
+      count<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      twinkleDuration<span class="token operator">:</span> <span class="token number">5000</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      id<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+      color<span class="token operator">:</span> <span class="token string">'yellow'</span><span class="token punctuation">,</span>
+      duration<span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span>
+      count<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      twinkleDuration<span class="token operator">:</span> <span class="token number">0</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>runningLight<span class="token punctuation">,</span> setRunningLight<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">setRunningLight</span><span class="token punctuation">(</span>lights<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">function</span> <span class="token function">handleOnFinish</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> index <span class="token operator">=</span> lights<span class="token punctuation">.</span><span class="token function">findIndex</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> item<span class="token punctuation">.</span>id <span class="token operator">===</span> runningLight<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> newIndex <span class="token operator">=</span> index <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>newIndex <span class="token operator">&gt;=</span> lights<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      newIndex <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">setRunningLight</span><span class="token punctuation">(</span>lights<span class="token punctuation">[</span>newIndex<span class="token punctuation">]</span><span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">'traffic-light-item'</span><span class="token operator">&gt;</span>
+      <span class="token punctuation">{</span>lights<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">light</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>LightItem key<span class="token operator">=</span><span class="token punctuation">{</span>light<span class="token punctuation">.</span>id<span class="token punctuation">}</span> light<span class="token operator">=</span><span class="token punctuation">{</span>light<span class="token punctuation">}</span> runningLight<span class="token operator">=</span><span class="token punctuation">{</span>runningLight<span class="token punctuation">}</span> onFinish<span class="token operator">=</span><span class="token punctuation">{</span>handleOnFinish<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">LightItem</span><span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>light<span class="token punctuation">,</span> setLight<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span>props<span class="token punctuation">.</span>light<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>count<span class="token punctuation">,</span> setCount<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> <span class="token punctuation">[</span>active<span class="token punctuation">,</span> setActive<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> timer <span class="token operator">=</span> <span class="token function">useRef</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">setActive</span><span class="token punctuation">(</span>props<span class="token punctuation">.</span>light<span class="token punctuation">.</span>id <span class="token operator">===</span> props<span class="token punctuation">.</span>runningLight<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>props<span class="token punctuation">.</span>runningLight<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>props<span class="token punctuation">.</span>runningLight <span class="token operator">===</span> light<span class="token punctuation">.</span>id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> <span class="token function-variable function">run</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>light<span class="token punctuation">.</span>twinkleDuration <span class="token operator">&amp;&amp;</span> light<span class="token punctuation">.</span>duration <span class="token operator">-</span> count <span class="token operator">&lt;=</span> light<span class="token punctuation">.</span>twinkleDuration <span class="token operator">+</span> <span class="token number">1000</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token function">setActive</span><span class="token punctuation">(</span><span class="token operator">!</span>active<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>light<span class="token punctuation">.</span>duration <span class="token operator">===</span> count<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          props<span class="token punctuation">.</span><span class="token function">onFinish</span><span class="token punctuation">(</span>props<span class="token punctuation">.</span>runningLight<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token function">clearTimeout</span><span class="token punctuation">(</span>timer<span class="token punctuation">.</span>current<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token function">setActive</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token function">setCount</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+          <span class="token function">setCount</span><span class="token punctuation">(</span><span class="token parameter">pre</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> pre <span class="token operator">+</span> <span class="token number">1000</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      timer<span class="token punctuation">.</span>current <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span>run<span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token function">clearTimeout</span><span class="token punctuation">(</span>timer<span class="token punctuation">.</span>current<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">clearTimeout</span><span class="token punctuation">(</span>timer<span class="token punctuation">.</span>current<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>props<span class="token punctuation">.</span>runningLight<span class="token punctuation">,</span> count<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div
+      className<span class="token operator">=</span><span class="token string">'lingt-item'</span>
+      style<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+        color<span class="token operator">:</span> <span class="token string">'#ccc'</span><span class="token punctuation">,</span>
+        backgroundColor<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>light<span class="token punctuation">.</span>color<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+        opacity<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>active <span class="token operator">?</span> <span class="token string">'1'</span> <span class="token operator">:</span> <span class="token string">'0.5'</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span>
+      <span class="token punctuation">}</span><span class="token punctuation">}</span>
+    <span class="token operator">&gt;</span>
+      <span class="token punctuation">{</span>light<span class="token punctuation">.</span>id <span class="token operator">===</span> props<span class="token punctuation">.</span>runningLight <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>light<span class="token punctuation">.</span>duration <span class="token operator">-</span> count<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">1000</span><span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> TrafficLightItem<span class="token punctuation">;</span>
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.traffic-light-item</span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+  <span class="token property">justify-content</span><span class="token punctuation">:</span> space-around<span class="token punctuation">;</span>
+  <span class="token property">flex-direction</span><span class="token punctuation">:</span> row<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.traffic-light-item .lingt-item</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">border-radius</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-flex<span class="token punctuation">;</span>
+  <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+  <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/blog/interview/useFetch.html">
+        自定义请求 Hook
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.700e665d.js" defer></script><script src="/blog/assets/js/2.226257d3.js" defer></script><script src="/blog/assets/js/78.fc53d4aa.js" defer></script>
+  </body>
+</html>
