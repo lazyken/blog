@@ -38,7 +38,8 @@ const sidebar = {
         '/front-end/09.专题系列/02.浅深拷贝.md',
         '/front-end/09.专题系列/03.按需加载.md',
         '/front-end/09.专题系列/04.图片懒加载.md',
-        '/front-end/09.专题系列/05.Tree-Shaking.md'
+        '/front-end/09.专题系列/05.Tree-Shaking.md',
+        '/front-end/09.专题系列/07.错误处理.md'
       ]
     },
     {
