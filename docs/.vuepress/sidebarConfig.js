@@ -146,9 +146,9 @@ const sidebar = {
       collapsable: false,
       children: [
         // prettier-ignore
-        '/algorithm/3.排序算法/01.冒泡排序.md',
-        '/algorithm/3.排序算法/02.选择排序.md',
-        '/algorithm/3.排序算法/03.快速排序.md'
+        '/algorithm/4.排序算法/01.冒泡排序.md',
+        '/algorithm/4.排序算法/02.选择排序.md',
+        '/algorithm/4.排序算法/03.快速排序.md'
       ]
     }
   ],
