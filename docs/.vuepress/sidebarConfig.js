@@ -167,7 +167,10 @@ const sidebar = {
     '/interview/_.get.md',
     '/interview/生成验证码.md',
     '/interview/实现trim方法.md',
-    '/interview/compareVersion'
+    '/interview/compareVersion.md',
+    '/interview/EventEmitter发布订阅.md',
+    '/interview/实现call、apply、bind方法.md',
+    '/interview/catulate.md'
   ],
   '/node/': ['/node/'],
   '/computer-base/': [
