@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>文件监听与热更新 HMR | lazyken</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="日积跬步，足以致千里！">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.dab10465.css" as="style"><link rel="preload" href="/blog/assets/js/app.0ffea803.js" as="script"><link rel="preload" href="/blog/assets/js/2.226257d3.js" as="script"><link rel="preload" href="/blog/assets/js/114.d0ea0f14.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.548bce8a.js"><link rel="prefetch" href="/blog/assets/js/100.b014da1d.js"><link rel="prefetch" href="/blog/assets/js/101.6fc01d5c.js"><link rel="prefetch" href="/blog/assets/js/102.90f4391e.js"><link rel="prefetch" href="/blog/assets/js/103.a1b888ee.js"><link rel="prefetch" href="/blog/assets/js/104.f38c14c4.js"><link rel="prefetch" href="/blog/assets/js/105.c95db616.js"><link rel="prefetch" href="/blog/assets/js/106.aad77e4a.js"><link rel="prefetch" href="/blog/assets/js/107.74b42ce8.js"><link rel="prefetch" href="/blog/assets/js/108.03775142.js"><link rel="prefetch" href="/blog/assets/js/109.050cb9b6.js"><link rel="prefetch" href="/blog/assets/js/11.ed08da4e.js"><link rel="prefetch" href="/blog/assets/js/110.176e1f14.js"><link rel="prefetch" href="/blog/assets/js/111.4e0c5308.js"><link rel="prefetch" href="/blog/assets/js/112.b4c9f1bd.js"><link rel="prefetch" href="/blog/assets/js/113.dbd4dd76.js"><link rel="prefetch" href="/blog/assets/js/12.8d25f27b.js"><link rel="prefetch" href="/blog/assets/js/13.7ad2bd62.js"><link rel="prefetch" href="/blog/assets/js/14.d69edb7f.js"><link rel="prefetch" href="/blog/assets/js/15.525c8255.js"><link rel="prefetch" href="/blog/assets/js/16.e13521f4.js"><link rel="prefetch" href="/blog/assets/js/17.6214eb25.js"><link rel="prefetch" href="/blog/assets/js/18.db56068f.js"><link rel="prefetch" href="/blog/assets/js/19.e78e566b.js"><link rel="prefetch" href="/blog/assets/js/20.63e59468.js"><link rel="prefetch" href="/blog/assets/js/21.555ad225.js"><link rel="prefetch" href="/blog/assets/js/22.0d6973f6.js"><link rel="prefetch" href="/blog/assets/js/23.3ca90f05.js"><link rel="prefetch" href="/blog/assets/js/24.018946c5.js"><link rel="prefetch" href="/blog/assets/js/25.2d5ef404.js"><link rel="prefetch" href="/blog/assets/js/26.04bf392e.js"><link rel="prefetch" href="/blog/assets/js/27.206711ef.js"><link rel="prefetch" href="/blog/assets/js/28.44f91c6d.js"><link rel="prefetch" href="/blog/assets/js/29.189cb004.js"><link rel="prefetch" href="/blog/assets/js/3.2f006776.js"><link rel="prefetch" href="/blog/assets/js/30.66f3f168.js"><link rel="prefetch" href="/blog/assets/js/31.87176712.js"><link rel="prefetch" href="/blog/assets/js/32.1980a0da.js"><link rel="prefetch" href="/blog/assets/js/33.bfe839ef.js"><link rel="prefetch" href="/blog/assets/js/34.8ce83445.js"><link rel="prefetch" href="/blog/assets/js/35.47e29715.js"><link rel="prefetch" href="/blog/assets/js/36.c72713f6.js"><link rel="prefetch" href="/blog/assets/js/37.a9595a5e.js"><link rel="prefetch" href="/blog/assets/js/38.2e0b15a2.js"><link rel="prefetch" href="/blog/assets/js/39.0a9faa5f.js"><link rel="prefetch" href="/blog/assets/js/4.d02431a5.js"><link rel="prefetch" href="/blog/assets/js/40.f7839a19.js"><link rel="prefetch" href="/blog/assets/js/41.d762fadf.js"><link rel="prefetch" href="/blog/assets/js/42.7eba53a2.js"><link rel="prefetch" href="/blog/assets/js/43.a7b61bf0.js"><link rel="prefetch" href="/blog/assets/js/44.3042709b.js"><link rel="prefetch" href="/blog/assets/js/45.a659f163.js"><link rel="prefetch" href="/blog/assets/js/46.0b48f20d.js"><link rel="prefetch" href="/blog/assets/js/47.d08abf7c.js"><link rel="prefetch" href="/blog/assets/js/48.080e9637.js"><link rel="prefetch" href="/blog/assets/js/49.b0c83404.js"><link rel="prefetch" href="/blog/assets/js/5.ced10b63.js"><link rel="prefetch" href="/blog/assets/js/50.7bb9eeb7.js"><link rel="prefetch" href="/blog/assets/js/51.f0c5630e.js"><link rel="prefetch" href="/blog/assets/js/52.a413b50c.js"><link rel="prefetch" href="/blog/assets/js/53.da7f5f2f.js"><link rel="prefetch" href="/blog/assets/js/54.bd50f165.js"><link rel="prefetch" href="/blog/assets/js/55.62299248.js"><link rel="prefetch" href="/blog/assets/js/56.14b3656b.js"><link rel="prefetch" href="/blog/assets/js/57.35b79d35.js"><link rel="prefetch" href="/blog/assets/js/58.bcc76a28.js"><link rel="prefetch" href="/blog/assets/js/59.f4d79295.js"><link rel="prefetch" href="/blog/assets/js/6.ea6da867.js"><link rel="prefetch" href="/blog/assets/js/60.fb1d1f64.js"><link rel="prefetch" href="/blog/assets/js/61.63feb55d.js"><link rel="prefetch" href="/blog/assets/js/62.070a40d8.js"><link rel="prefetch" href="/blog/assets/js/63.726eb5bc.js"><link rel="prefetch" href="/blog/assets/js/64.cfb0802e.js"><link rel="prefetch" href="/blog/assets/js/65.8b112449.js"><link rel="prefetch" href="/blog/assets/js/66.de5b953d.js"><link rel="prefetch" href="/blog/assets/js/67.44166a7a.js"><link rel="prefetch" href="/blog/assets/js/68.b3c2add6.js"><link rel="prefetch" href="/blog/assets/js/69.6945006c.js"><link rel="prefetch" href="/blog/assets/js/7.1879ad5f.js"><link rel="prefetch" href="/blog/assets/js/70.ca8a3be2.js"><link rel="prefetch" href="/blog/assets/js/71.ae649f1a.js"><link rel="prefetch" href="/blog/assets/js/72.554d4ba8.js"><link rel="prefetch" href="/blog/assets/js/73.e01c04a3.js"><link rel="prefetch" href="/blog/assets/js/74.8661b0ab.js"><link rel="prefetch" href="/blog/assets/js/75.9a466016.js"><link rel="prefetch" href="/blog/assets/js/76.e7ffa649.js"><link rel="prefetch" href="/blog/assets/js/77.8279d938.js"><link rel="prefetch" href="/blog/assets/js/78.4f0cd141.js"><link rel="prefetch" href="/blog/assets/js/79.6a50d4a3.js"><link rel="prefetch" href="/blog/assets/js/8.fe550850.js"><link rel="prefetch" href="/blog/assets/js/80.1aaf152c.js"><link rel="prefetch" href="/blog/assets/js/81.5596cc2b.js"><link rel="prefetch" href="/blog/assets/js/82.4143846e.js"><link rel="prefetch" href="/blog/assets/js/83.cf60de1b.js"><link rel="prefetch" href="/blog/assets/js/84.c155cd15.js"><link rel="prefetch" href="/blog/assets/js/85.713e8403.js"><link rel="prefetch" href="/blog/assets/js/86.d5711bab.js"><link rel="prefetch" href="/blog/assets/js/87.e2321d15.js"><link rel="prefetch" href="/blog/assets/js/88.84b1f701.js"><link rel="prefetch" href="/blog/assets/js/89.9449e308.js"><link rel="prefetch" href="/blog/assets/js/9.807958f4.js"><link rel="prefetch" href="/blog/assets/js/90.6232b53b.js"><link rel="prefetch" href="/blog/assets/js/91.204ff05e.js"><link rel="prefetch" href="/blog/assets/js/92.b8ec8ea6.js"><link rel="prefetch" href="/blog/assets/js/93.f7ce546f.js"><link rel="prefetch" href="/blog/assets/js/94.ed3a1839.js"><link rel="prefetch" href="/blog/assets/js/95.91b17e68.js"><link rel="prefetch" href="/blog/assets/js/96.85f9118a.js"><link rel="prefetch" href="/blog/assets/js/97.d073ffe2.js"><link rel="prefetch" href="/blog/assets/js/98.4528ae5d.js"><link rel="prefetch" href="/blog/assets/js/99.4fb383f7.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.dab10465.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">lazyken</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/front-end/03.Javascript/01.数据类型.html" class="nav-link">
+  前端
+</a></div><div class="nav-item"><a href="/blog/algorithm/1.数组和字符串/1.数组简介.html" class="nav-link">
+  数据结构与算法
+</a></div><div class="nav-item"><a href="/blog/interview/trafficlight.html" class="nav-link">
+  编程题
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/webpack/热更新hmr.html" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/blog/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/blog/computer-base/比特、位数、字节.html" class="nav-link">
+  计算机基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/book/01.阮一峰ES6/02.let和const命令.html" class="nav-link">
+  技术书籍
+</a></li><li class="dropdown-item"><!----> <a href="/blog/life/" class="nav-link">
+  生活随记
+</a></li></ul></div></div> <a href="https://github.com/lazyken/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/front-end/03.Javascript/01.数据类型.html" class="nav-link">
+  前端
+</a></div><div class="nav-item"><a href="/blog/algorithm/1.数组和字符串/1.数组简介.html" class="nav-link">
+  数据结构与算法
+</a></div><div class="nav-item"><a href="/blog/interview/trafficlight.html" class="nav-link">
+  编程题
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/webpack/热更新hmr.html" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/blog/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/blog/computer-base/比特、位数、字节.html" class="nav-link">
+  计算机基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/book/01.阮一峰ES6/02.let和const命令.html" class="nav-link">
+  技术书籍
+</a></li><li class="dropdown-item"><!----> <a href="/blog/life/" class="nav-link">
+  生活随记
+</a></li></ul></div></div> <a href="https://github.com/lazyken/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/blog/webpack/热更新hmr.html" class="active sidebar-link">文件监听与热更新 HMR</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/webpack/热更新hmr.html#启用监听模式" class="sidebar-link">启用监听模式</a></li><li class="sidebar-sub-header"><a href="/blog/webpack/热更新hmr.html#使用-webpack-dev-srever" class="sidebar-link">使用 webpack-dev-srever</a></li><li class="sidebar-sub-header"><a href="/blog/webpack/热更新hmr.html#hmr-hot-module-replace-模块热替换" class="sidebar-link">HMR —— Hot Module Replace，模块热替换</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="文件监听与热更新-hmr"><a href="#文件监听与热更新-hmr" class="header-anchor">#</a> 文件监听与热更新 HMR</h1> <p>热更新，指的是我们在本地开发的同时打开浏览器进行预览，当代码文件发生变化时，浏览器自动更新页面内容的技术。这里的自动更新，表现上又分为自动刷新整个页面，以及页面整体无刷新而只更新页面的部分内容。</p> <p>与之相对的是在早期开发流程中，每次代码变更后需要手动刷新浏览器才能看到变更效果的情况。甚至于，代码变更后还需要手动执行打包脚本，完成编译打包后再刷新浏览器。而使用热更新，可以大大减少这些麻烦。</p> <h2 id="启用监听模式"><a href="#启用监听模式" class="header-anchor">#</a> 启用监听模式</h2> <p>未启用文件监听时，每当源码修改后，需要手动执行构建，得到最新的输出文件，且要手动重新用浏览器加载新的页面。<br>
+文件监听是在发现源码发生变化时，自动重新构建出新的输出文件。</p> <p>webpack 开启监听模式，有两种方式：</p> <ul><li>启动 webpack 命令时，带上 <code>--watch</code> 参数</li> <li>在配置 webpack.config.js 中设置 <code>watch:true</code></li></ul> <p>不过文件监听还是有些不足：在自动重新构建后，仍需要手动刷新页面</p> <h3 id="原理分析"><a href="#原理分析" class="header-anchor">#</a> 原理分析</h3> <ul><li>轮询判断文件的最后编辑时间是否发生变化</li> <li>某个文件发生变化，并不会立刻告诉监听者，而是先缓存起来，等 <code>aggregateTimeout</code> 时间后在通知监听者</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// webpack.config.watch.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 默认为false，也就是不开启</span>
+  watch<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment">// 只有开启监听模式，watchOptions才有意义</span>
+  watchOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 默认为空，不监听等文件或者文件夹，支持正则匹配</span>
+    ignored<span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">node_modules</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+    <span class="token comment">// 监听到变化发生后等300ms再去执行，默认300ms</span>
+    aggregateTimeout<span class="token operator">:</span> <span class="token number">300</span><span class="token punctuation">,</span>
+    <span class="token comment">// 判断文件是否发生变化是通过不停询问系统指定文件有没有变化实现的，默认每秒问1000次</span>
+    poll<span class="token operator">:</span> <span class="token number">1000</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">// package.json</span>
+<span class="token string">&quot;scripts&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+  <span class="token string">&quot;build:watch&quot;</span><span class="token operator">:</span> <span class="token string">&quot;webpack --config webpack.config.watch.js&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="使用-webpack-dev-srever"><a href="#使用-webpack-dev-srever" class="header-anchor">#</a> 使用 webpack-dev-srever</h2> <p><code>webpack-dev-server</code> 是一个 npm 包，它提供了一个简单的 web 服务器和使用实时重载的能力。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// webpack.config.reload.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  devServer<span class="token operator">:</span> <span class="token punctuation">{</span>
+    contentBase<span class="token operator">:</span> <span class="token string">'./dist'</span><span class="token punctuation">,</span>
+    open<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// 启动服务后自动打开浏览器</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">// package.js</span>
+<span class="token string">&quot;scirpts&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+  <span class="token string">&quot;dev:reload&quot;</span><span class="token operator">:</span> <span class="token string">&quot;webpack-dev-server --config webpack.config.reload.js&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><code>webpack-dev-server</code> 在本地起了个 web 服务器，通过 websocket 与浏览器建立持久化链接，当源代码发生变更时，会通过 socket 通知网页端，网页端接到通知后会自动触发页面刷新。</p> <p>到这一步，仍然还有需要解决到问题：devServer 能自动刷新页面，但是当页面有了一些状态后，刷新页面会导致页面丢失状态。</p> <h2 id="hmr-hot-module-replace-模块热替换"><a href="#hmr-hot-module-replace-模块热替换" class="header-anchor">#</a> HMR —— Hot Module Replace，模块热替换</h2> <p>为了解决页面刷新导致的状态丢失问题，webpack 提出了模块热替换的概念。<br>
+在 webpack 中，webpacke 使用内置的 HotModuleReplacementPlugin 来实现模块热替换。
+先来看一下怎么使用</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// hmr/index.js</span>
+<span class="token keyword">import</span> <span class="token string">'./style.css'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Text <span class="token keyword">from</span> <span class="token string">'./text.js'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> div <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>div<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  div<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> Text<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 调用 HotModuleReplacementPlugin 提供的 module.hot API 实现热更新</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>module<span class="token punctuation">.</span>hot<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  module<span class="token punctuation">.</span>hot<span class="token punctuation">.</span><span class="token function">accept</span><span class="token punctuation">(</span><span class="token string">'./text.js'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code><span class="token comment">/* hmr/style.css */</span>
+<span class="token selector">div</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// hmr/text.js</span>
+<span class="token keyword">const</span> text <span class="token operator">=</span> <span class="token string">'hello world1233'</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> text<span class="token punctuation">;</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// webpack.config.hmr.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  mode<span class="token operator">:</span> <span class="token string">'development'</span><span class="token punctuation">,</span>
+  entry<span class="token operator">:</span> <span class="token string">'./hmr/index.js'</span><span class="token punctuation">,</span>
+  output<span class="token operator">:</span> <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'./dist/hmr'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  module<span class="token operator">:</span> <span class="token punctuation">{</span>
+    rules<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        test<span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">\.css$</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span>
+        use<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'style-loader'</span><span class="token punctuation">,</span> <span class="token string">'css-loader'</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token keyword">new</span> <span class="token class-name">CleanWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">new</span> <span class="token class-name">HtmlWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      template<span class="token operator">:</span> <span class="token string">'./public/index.html'</span><span class="token punctuation">,</span>
+      title<span class="token operator">:</span> <span class="token string">'hmr'</span><span class="token punctuation">,</span>
+      hash<span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  devServer<span class="token operator">:</span> <span class="token punctuation">{</span>
+    contentBase<span class="token operator">:</span> <span class="token string">'./dist/hmr'</span><span class="token punctuation">,</span>
+    open<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    hot<span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="css-模块热更新"><a href="#css-模块热更新" class="header-anchor">#</a> css 模块热更新</h3> <p>按照上面的配置，当修改样式为<code>div { color: blue }</code>时，发现页面没有刷新，同时在控制台可以看到 head 标签中新增了 script 标签 <code>&lt;script charset=&quot;utf-8&quot; src=&quot;main.afb9daf584b3e1220f9a.hot-update.js&quot;&gt;&lt;/script&gt;</code> ，且 style 标签里的样式被替换成了 <code>div { color: blue }</code>。<br>
+css 的热更新得益于<code>style-loader</code>的处理，在其内部通过 <code>module.hot</code> api 实现了热替换的逻辑。简化的代码大致如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// &quot;webpack&quot;: &quot;^4.44.2&quot;</span>
+
+<span class="token keyword">var</span> api <span class="token operator">=</span> <span class="token function">__webpack_require__</span><span class="token punctuation">(</span><span class="token comment">/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */</span> <span class="token string">'./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> content <span class="token operator">=</span> <span class="token function">__webpack_require__</span><span class="token punctuation">(</span><span class="token comment">/*! !../node_modules/css-loader/dist/cjs.js!./style.css */</span> <span class="token string">'./node_modules/css-loader/dist/cjs.js!./hmr/style.css'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+content <span class="token operator">=</span> content<span class="token punctuation">.</span>__esModule <span class="token operator">?</span> content<span class="token punctuation">.</span>default <span class="token operator">:</span> content<span class="token punctuation">;</span>
+
+<span class="token operator">...</span><span class="token operator">...</span>
+
+<span class="token keyword">var</span> update <span class="token operator">=</span> <span class="token function">api</span><span class="token punctuation">(</span>content<span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token operator">...</span><span class="token operator">...</span>
+
+module<span class="token punctuation">.</span>hot<span class="token punctuation">.</span><span class="token function">accept</span><span class="token punctuation">(</span><span class="token comment">/*! !../node_modules/css-loader/dist/cjs.js!./style.css */</span> <span class="token string">'./node_modules/css-loader/dist/cjs.js!./hmr/style.css'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  content <span class="token operator">=</span> <span class="token function">__webpack_require__</span><span class="token punctuation">(</span><span class="token comment">/*! !../node_modules/css-loader/dist/cjs.js!./style.css */</span> <span class="token string">'./node_modules/css-loader/dist/cjs.js!./hmr/style.css'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  content <span class="token operator">=</span> content<span class="token punctuation">.</span>__esModule <span class="token operator">?</span> content<span class="token punctuation">.</span>default <span class="token operator">:</span> content<span class="token punctuation">;</span>
+
+  <span class="token operator">...</span><span class="token operator">...</span>
+
+  <span class="token function">update</span><span class="token punctuation">(</span>content<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>hot<span class="token punctuation">.</span><span class="token function">dispose</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>从上面的代码中我们可以看到，在运行时调用 API 实现将样式注入新生成的 style 标签，并将返回函数传递给 <code>update</code> 变量。然后，在 <code>module.hot.accept</code> 方法的回调函数中执行 <code>update(content)</code>，在 <code>module.hot.dispose</code> 中执行 <code>update()</code>。通过查看上述 API 的代码，可以发现 <code>update(content)</code> 是将新的样式内容更新到原 style 标签中，而 <code>update()</code> 则是移除注入的 style 标签。</p> <p>在上面代码的两个 API 中，<code>hot.accept</code> 方法传入依赖模块名称和回调方法，当依赖模块发生更新时，其回调方法就会被执行，而开发者就可以在回调中实现对应的替换逻辑，即上面的用更新的样式替换原标签中的样式。另一个 <code>hot.dispose</code> 方法则是传入一个回调，当代码上下文的模块被移除时，其回调方法就会被执行。例如当我们在源代码中移除导入的 CSS 模块时，运行时原有的模块中的 <code>update()</code> 就会被执行，从而在页面移除对应的 style 标签。</p> <h3 id="js-模块热更新"><a href="#js-模块热更新" class="header-anchor">#</a> js 模块热更新</h3> <p>在上面的 <code>text.js</code> 中我们也调用了 <code>module.hot</code> 的 API 手动实现了热更新。如果没有手动调用，会发现修改 <code>text.js</code> 的内容，页面是直接刷新来更新，而不是热替换。<br>
+这在平时的业务开发过程中并不常见，热更新的部分大多由相应的 loader 去处理。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.0ffea803.js" defer></script><script src="/blog/assets/js/2.226257d3.js" defer></script><script src="/blog/assets/js/114.d0ea0f14.js" defer></script>
+  </body>
+</html>

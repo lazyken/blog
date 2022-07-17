@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>双指针技巧 | lazyken</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="日积跬步，足以致千里！">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.dab10465.css" as="style"><link rel="preload" href="/blog/assets/js/app.0ffea803.js" as="script"><link rel="preload" href="/blog/assets/js/2.226257d3.js" as="script"><link rel="preload" href="/blog/assets/js/18.db56068f.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.548bce8a.js"><link rel="prefetch" href="/blog/assets/js/100.b014da1d.js"><link rel="prefetch" href="/blog/assets/js/101.6fc01d5c.js"><link rel="prefetch" href="/blog/assets/js/102.90f4391e.js"><link rel="prefetch" href="/blog/assets/js/103.a1b888ee.js"><link rel="prefetch" href="/blog/assets/js/104.f38c14c4.js"><link rel="prefetch" href="/blog/assets/js/105.c95db616.js"><link rel="prefetch" href="/blog/assets/js/106.aad77e4a.js"><link rel="prefetch" href="/blog/assets/js/107.74b42ce8.js"><link rel="prefetch" href="/blog/assets/js/108.03775142.js"><link rel="prefetch" href="/blog/assets/js/109.050cb9b6.js"><link rel="prefetch" href="/blog/assets/js/11.ed08da4e.js"><link rel="prefetch" href="/blog/assets/js/110.176e1f14.js"><link rel="prefetch" href="/blog/assets/js/111.4e0c5308.js"><link rel="prefetch" href="/blog/assets/js/112.b4c9f1bd.js"><link rel="prefetch" href="/blog/assets/js/113.dbd4dd76.js"><link rel="prefetch" href="/blog/assets/js/114.d0ea0f14.js"><link rel="prefetch" href="/blog/assets/js/12.8d25f27b.js"><link rel="prefetch" href="/blog/assets/js/13.7ad2bd62.js"><link rel="prefetch" href="/blog/assets/js/14.d69edb7f.js"><link rel="prefetch" href="/blog/assets/js/15.525c8255.js"><link rel="prefetch" href="/blog/assets/js/16.e13521f4.js"><link rel="prefetch" href="/blog/assets/js/17.6214eb25.js"><link rel="prefetch" href="/blog/assets/js/19.e78e566b.js"><link rel="prefetch" href="/blog/assets/js/20.63e59468.js"><link rel="prefetch" href="/blog/assets/js/21.555ad225.js"><link rel="prefetch" href="/blog/assets/js/22.0d6973f6.js"><link rel="prefetch" href="/blog/assets/js/23.3ca90f05.js"><link rel="prefetch" href="/blog/assets/js/24.018946c5.js"><link rel="prefetch" href="/blog/assets/js/25.2d5ef404.js"><link rel="prefetch" href="/blog/assets/js/26.04bf392e.js"><link rel="prefetch" href="/blog/assets/js/27.206711ef.js"><link rel="prefetch" href="/blog/assets/js/28.44f91c6d.js"><link rel="prefetch" href="/blog/assets/js/29.189cb004.js"><link rel="prefetch" href="/blog/assets/js/3.2f006776.js"><link rel="prefetch" href="/blog/assets/js/30.66f3f168.js"><link rel="prefetch" href="/blog/assets/js/31.87176712.js"><link rel="prefetch" href="/blog/assets/js/32.1980a0da.js"><link rel="prefetch" href="/blog/assets/js/33.bfe839ef.js"><link rel="prefetch" href="/blog/assets/js/34.8ce83445.js"><link rel="prefetch" href="/blog/assets/js/35.47e29715.js"><link rel="prefetch" href="/blog/assets/js/36.c72713f6.js"><link rel="prefetch" href="/blog/assets/js/37.a9595a5e.js"><link rel="prefetch" href="/blog/assets/js/38.2e0b15a2.js"><link rel="prefetch" href="/blog/assets/js/39.0a9faa5f.js"><link rel="prefetch" href="/blog/assets/js/4.d02431a5.js"><link rel="prefetch" href="/blog/assets/js/40.f7839a19.js"><link rel="prefetch" href="/blog/assets/js/41.d762fadf.js"><link rel="prefetch" href="/blog/assets/js/42.7eba53a2.js"><link rel="prefetch" href="/blog/assets/js/43.a7b61bf0.js"><link rel="prefetch" href="/blog/assets/js/44.3042709b.js"><link rel="prefetch" href="/blog/assets/js/45.a659f163.js"><link rel="prefetch" href="/blog/assets/js/46.0b48f20d.js"><link rel="prefetch" href="/blog/assets/js/47.d08abf7c.js"><link rel="prefetch" href="/blog/assets/js/48.080e9637.js"><link rel="prefetch" href="/blog/assets/js/49.b0c83404.js"><link rel="prefetch" href="/blog/assets/js/5.ced10b63.js"><link rel="prefetch" href="/blog/assets/js/50.7bb9eeb7.js"><link rel="prefetch" href="/blog/assets/js/51.f0c5630e.js"><link rel="prefetch" href="/blog/assets/js/52.a413b50c.js"><link rel="prefetch" href="/blog/assets/js/53.da7f5f2f.js"><link rel="prefetch" href="/blog/assets/js/54.bd50f165.js"><link rel="prefetch" href="/blog/assets/js/55.62299248.js"><link rel="prefetch" href="/blog/assets/js/56.14b3656b.js"><link rel="prefetch" href="/blog/assets/js/57.35b79d35.js"><link rel="prefetch" href="/blog/assets/js/58.bcc76a28.js"><link rel="prefetch" href="/blog/assets/js/59.f4d79295.js"><link rel="prefetch" href="/blog/assets/js/6.ea6da867.js"><link rel="prefetch" href="/blog/assets/js/60.fb1d1f64.js"><link rel="prefetch" href="/blog/assets/js/61.63feb55d.js"><link rel="prefetch" href="/blog/assets/js/62.070a40d8.js"><link rel="prefetch" href="/blog/assets/js/63.726eb5bc.js"><link rel="prefetch" href="/blog/assets/js/64.cfb0802e.js"><link rel="prefetch" href="/blog/assets/js/65.8b112449.js"><link rel="prefetch" href="/blog/assets/js/66.de5b953d.js"><link rel="prefetch" href="/blog/assets/js/67.44166a7a.js"><link rel="prefetch" href="/blog/assets/js/68.b3c2add6.js"><link rel="prefetch" href="/blog/assets/js/69.6945006c.js"><link rel="prefetch" href="/blog/assets/js/7.1879ad5f.js"><link rel="prefetch" href="/blog/assets/js/70.ca8a3be2.js"><link rel="prefetch" href="/blog/assets/js/71.ae649f1a.js"><link rel="prefetch" href="/blog/assets/js/72.554d4ba8.js"><link rel="prefetch" href="/blog/assets/js/73.e01c04a3.js"><link rel="prefetch" href="/blog/assets/js/74.8661b0ab.js"><link rel="prefetch" href="/blog/assets/js/75.9a466016.js"><link rel="prefetch" href="/blog/assets/js/76.e7ffa649.js"><link rel="prefetch" href="/blog/assets/js/77.8279d938.js"><link rel="prefetch" href="/blog/assets/js/78.4f0cd141.js"><link rel="prefetch" href="/blog/assets/js/79.6a50d4a3.js"><link rel="prefetch" href="/blog/assets/js/8.fe550850.js"><link rel="prefetch" href="/blog/assets/js/80.1aaf152c.js"><link rel="prefetch" href="/blog/assets/js/81.5596cc2b.js"><link rel="prefetch" href="/blog/assets/js/82.4143846e.js"><link rel="prefetch" href="/blog/assets/js/83.cf60de1b.js"><link rel="prefetch" href="/blog/assets/js/84.c155cd15.js"><link rel="prefetch" href="/blog/assets/js/85.713e8403.js"><link rel="prefetch" href="/blog/assets/js/86.d5711bab.js"><link rel="prefetch" href="/blog/assets/js/87.e2321d15.js"><link rel="prefetch" href="/blog/assets/js/88.84b1f701.js"><link rel="prefetch" href="/blog/assets/js/89.9449e308.js"><link rel="prefetch" href="/blog/assets/js/9.807958f4.js"><link rel="prefetch" href="/blog/assets/js/90.6232b53b.js"><link rel="prefetch" href="/blog/assets/js/91.204ff05e.js"><link rel="prefetch" href="/blog/assets/js/92.b8ec8ea6.js"><link rel="prefetch" href="/blog/assets/js/93.f7ce546f.js"><link rel="prefetch" href="/blog/assets/js/94.ed3a1839.js"><link rel="prefetch" href="/blog/assets/js/95.91b17e68.js"><link rel="prefetch" href="/blog/assets/js/96.85f9118a.js"><link rel="prefetch" href="/blog/assets/js/97.d073ffe2.js"><link rel="prefetch" href="/blog/assets/js/98.4528ae5d.js"><link rel="prefetch" href="/blog/assets/js/99.4fb383f7.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.dab10465.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">lazyken</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/front-end/03.Javascript/01.数据类型.html" class="nav-link">
+  前端
+</a></div><div class="nav-item"><a href="/blog/algorithm/1.数组和字符串/1.数组简介.html" class="nav-link">
+  数据结构与算法
+</a></div><div class="nav-item"><a href="/blog/interview/trafficlight.html" class="nav-link">
+  编程题
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/webpack/热更新hmr.html" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/blog/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/blog/computer-base/比特、位数、字节.html" class="nav-link">
+  计算机基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/book/01.阮一峰ES6/02.let和const命令.html" class="nav-link">
+  技术书籍
+</a></li><li class="dropdown-item"><!----> <a href="/blog/life/" class="nav-link">
+  生活随记
+</a></li></ul></div></div> <a href="https://github.com/lazyken/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/front-end/03.Javascript/01.数据类型.html" class="nav-link">
+  前端
+</a></div><div class="nav-item"><a href="/blog/algorithm/1.数组和字符串/1.数组简介.html" class="nav-link">
+  数据结构与算法
+</a></div><div class="nav-item"><a href="/blog/interview/trafficlight.html" class="nav-link">
+  编程题
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/webpack/热更新hmr.html" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/blog/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/blog/computer-base/比特、位数、字节.html" class="nav-link">
+  计算机基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/book/01.阮一峰ES6/02.let和const命令.html" class="nav-link">
+  技术书籍
+</a></li><li class="dropdown-item"><!----> <a href="/blog/life/" class="nav-link">
+  生活随记
+</a></li></ul></div></div> <a href="https://github.com/lazyken/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>数组和字符串</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/algorithm/1.数组和字符串/1.数组简介.html" class="sidebar-link">数组简介</a></li><li><a href="/blog/algorithm/1.数组和字符串/2.二维数组简介.html" class="sidebar-link">二维数组简介</a></li><li><a href="/blog/algorithm/1.数组和字符串/3.字符串简介.html" class="sidebar-link">字符串简介</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>队列&amp;栈</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/algorithm/2.队列&amp;栈/1.队列.html" class="sidebar-link">队列</a></li><li><a href="/blog/algorithm/2.队列&amp;栈/2.BFS.html" class="sidebar-link">队列和广度优先搜索(BFS)</a></li><li><a href="/blog/algorithm/2.队列&amp;栈/3.栈.html" class="sidebar-link">栈</a></li><li><a href="/blog/algorithm/2.队列&amp;栈/4.DFS.html" class="sidebar-link">栈与深度优先搜索(DFS)</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>链表</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/algorithm/3.链表/1.单链表.html" class="sidebar-link">单链表</a></li><li><a href="/blog/algorithm/3.链表/2.双指针技巧.html" class="active sidebar-link">双指针技巧</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/algorithm/3.链表/2.双指针技巧.html#链表中的双指针" class="sidebar-link">链表中的双指针</a></li><li class="sidebar-sub-header"><a href="/blog/algorithm/3.链表/2.双指针技巧.html#判断环形链表" class="sidebar-link">判断环形链表</a></li><li class="sidebar-sub-header"><a href="/blog/algorithm/3.链表/2.双指针技巧.html#判断环形链表-2" class="sidebar-link">判断环形链表 2</a></li><li class="sidebar-sub-header"><a href="/blog/algorithm/3.链表/2.双指针技巧.html#相交链表" class="sidebar-link">相交链表</a></li><li class="sidebar-sub-header"><a href="/blog/algorithm/3.链表/2.双指针技巧.html#删除链表的倒数第-n-个节点" class="sidebar-link">删除链表的倒数第 N 个节点</a></li></ul></li><li><a href="/blog/algorithm/3.链表/3.金典问题.html" class="sidebar-link">金典问题</a></li><li><a href="/blog/algorithm/3.链表/4.双链表.html" class="sidebar-link">双链表</a></li><li><a href="/blog/algorithm/3.链表/5.小结.html" class="sidebar-link">小结</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>排序算法</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/algorithm/4.排序算法/01.冒泡排序.html" class="sidebar-link">冒泡排序</a></li><li><a href="/blog/algorithm/4.排序算法/02.选择排序.html" class="sidebar-link">选择排序</a></li><li><a href="/blog/algorithm/4.排序算法/03.快速排序.html" class="sidebar-link">快速排序</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="双指针技巧"><a href="#双指针技巧" class="header-anchor">#</a> 双指针技巧</h1> <h2 id="链表中的双指针"><a href="#链表中的双指针" class="header-anchor">#</a> 链表中的双指针</h2> <p>在<code>数组和字符串</code>中，主要有 2 种双指针的使用场景：</p> <ol><li>两个指针从不同位置出发：一个从始端开始，另一个从末端开始；</li> <li>两个指针以不同速度移动：一个指针快一些，另一个指针慢一些。</li></ol> <p>对于单链表，因为我们只能在一个方向上遍历链表，所以第一种情景可能无法工作。然而，第二种情景，也被称为慢指针和快指针技巧，是非常有用的。</p> <h2 id="判断环形链表"><a href="#判断环形链表" class="header-anchor">#</a> 判断环形链表</h2> <p>给定一个链表，判断链表中是否有环。</p> <p>如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，我们使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。 如果 pos 是 -1，则在该链表中没有环。注意：pos 不作为参数进行传递，仅仅是为了标识链表的实际情况。</p> <p>如果链表中存在环，则返回 true 。 否则，返回 false 。</p> <p>进阶：<br>
+你能用 O(1)（即，常量）内存解决此问题吗？</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 方法一：哈希表</span>
+<span class="token keyword">var</span> <span class="token function-variable function">hasCycle</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">head</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>head <span class="token operator">||</span> <span class="token operator">!</span>head<span class="token punctuation">.</span>next <span class="token operator">||</span> <span class="token operator">!</span>head<span class="token punctuation">.</span>next<span class="token punctuation">.</span>next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">var</span> hashMap <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">WeakMap</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> current <span class="token operator">=</span> head<span class="token punctuation">;</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>hashMap<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token keyword">undefined</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>current<span class="token punctuation">.</span>next <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    hashMap<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>current<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    current <span class="token operator">=</span> current<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 方法二：快慢指针</span>
+<span class="token keyword">var</span> <span class="token function-variable function">hasCycle</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">head</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>head <span class="token operator">||</span> <span class="token operator">!</span>head<span class="token punctuation">.</span>next <span class="token operator">||</span> <span class="token operator">!</span>head<span class="token punctuation">.</span>next<span class="token punctuation">.</span>next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">var</span> slow <span class="token operator">=</span> head<span class="token punctuation">;</span>
+  <span class="token keyword">var</span> fast <span class="token operator">=</span> head<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+  <span class="token comment">// 1.如果是循环链表，那么最终快慢指针肯定会相遇</span>
+  <span class="token comment">// 2.while循环是通过判断快慢指针是否相等作为条件，所以让快指针初始为head.next，</span>
+  <span class="token comment">// 这并不会影响判断逻辑，因此只要存在循环，快指针从慢指针之前的任意位置开始最终都会与慢指针相遇</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>fast <span class="token operator">!==</span> slow<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 可以在当前循环判断fast.next.next，</span>
+    <span class="token comment">// 也可以不对fast.next.next进行判断，因为会在下一个循环进行判断</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>fast <span class="token operator">||</span> <span class="token operator">!</span>fast<span class="token punctuation">.</span>next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    slow <span class="token operator">=</span> slow<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    fast <span class="token operator">=</span> fast<span class="token punctuation">.</span>next<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="判断环形链表-2"><a href="#判断环形链表-2" class="header-anchor">#</a> 判断环形链表 2</h2> <p>在 <code>判断环形链表</code> 的基础上，增加条件：<br>
+给定一个链表，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。<br>
+看图方便理解：<br> <img src="https://assets.leetcode-cn.com/solution-static/142/142_fig1.png" alt="环形链表的快慢指针"></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 方法一：哈希表</span>
+<span class="token keyword">var</span> <span class="token function-variable function">detectCycle</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">head</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>head <span class="token operator">||</span> <span class="token operator">!</span>head<span class="token punctuation">.</span>next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">var</span> current <span class="token operator">=</span> head<span class="token punctuation">;</span>
+  <span class="token keyword">var</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">WeakMap</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>map<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>current<span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token keyword">undefined</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>current<span class="token punctuation">.</span>next <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    map<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>current<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    current <span class="token operator">=</span> current<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> current<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 方法二：快慢指针</span>
+<span class="token keyword">var</span> <span class="token function-variable function">detectCycle</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">head</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>head <span class="token operator">||</span> <span class="token operator">!</span>head<span class="token punctuation">.</span>next <span class="token operator">||</span> <span class="token operator">!</span>head<span class="token punctuation">.</span>next<span class="token punctuation">.</span>next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 关键点，快慢指针都从起始点出发，当快慢指针相遇时（上图中的紫色点）可得：</span>
+  <span class="token comment">// 慢指针走了：a + b</span>
+  <span class="token comment">// 快指针走了： a + b + c + b</span>
+  <span class="token comment">// 这里为什么可以肯定慢指针在环形内最多只走一圈，2个指针就能相遇呢？</span>
+  <span class="token comment">// 因为，快指针的速度是慢指针的2倍，慢指针如果走完一圈，快指针肯定已经走完2圈了，</span>
+  <span class="token comment">// 所以必定在一圈内2个指针就会相遇</span>
+  <span class="token comment">// 所以： 2(a + b) = a + b + c + b =&gt; a = c</span>
+  <span class="token comment">// 也就是说，相遇点移动到入环点的的距离等于起始点移动到入环点的距离</span>
+  <span class="token comment">// 因此相遇时新增第三个指针ptr，从起始点开始每步移动一个距离，慢指针也继续移动一个距离</span>
+  <span class="token comment">// 那么ptr指针和慢指针将在入环点相遇</span>
+  <span class="token keyword">var</span> slow <span class="token operator">=</span> head<span class="token punctuation">;</span>
+  <span class="token keyword">var</span> fast <span class="token operator">=</span> head<span class="token punctuation">;</span>
+
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>fast <span class="token operator">!==</span> <span class="token keyword">null</span> <span class="token operator">&amp;&amp;</span> fast<span class="token punctuation">.</span>next <span class="token operator">!==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    slow <span class="token operator">=</span> slow<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>fast<span class="token punctuation">.</span>next <span class="token operator">!==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      fast <span class="token operator">=</span> fast<span class="token punctuation">.</span>next<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>fast <span class="token operator">===</span> slow<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">var</span> ptr <span class="token operator">=</span> head<span class="token punctuation">;</span>
+      <span class="token keyword">while</span> <span class="token punctuation">(</span>ptr <span class="token operator">!==</span> slow<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        slow <span class="token operator">=</span> slow<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+        ptr <span class="token operator">=</span> ptr<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">return</span> ptr<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="相交链表"><a href="#相交链表" class="header-anchor">#</a> 相交链表</h2> <p>编写一个程序，找到两个单链表相交的起始节点。<br>
+如下面的两个链表：
+<img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/14/160_statement.png" alt="相交链表-示例1">
+在节点 c1 开始相交。</p> <p>注意：</p> <ul><li>如果两个链表没有交点，返回 null.</li> <li>在返回结果后，两个链表仍须保持原有的结构。</li> <li>可假定整个链表结构中没有循环。</li> <li>程序尽量满足 O(n) 时间复杂度，且仅用 O(1) 内存。</li></ul> <blockquote><p>方法一: 暴力法<br>
+对链表 A 中的每一个结点 a&lt;i&gt; ，遍历整个链表 B 并检查链表 B 中是否存在结点和 a&lt;i&gt; 相同。<br>
+复杂度分析<br>
+时间复杂度 : (mn)。<br>
+空间复杂度 : O(1)。</p></blockquote> <blockquote><p>方法二: 哈希表法<br>
+遍历链表 A 并将每个结点的地址/引用存储在哈希表中。然后检查链表 B 中的每一个结点 b&lt;i&gt; 是否在哈希表中。若在，则 b&lt;i&gt; 为相交结点。<br>
+复杂度分析<br>
+时间复杂度 : (m+n)。<br>
+空间复杂度 : O(m)或 O(n)。</p></blockquote> <blockquote><p>方法三：双指针法<br>
+创建两个指针 pA 和 pB，分别初始化为链表 A 和 B 的头结点。然后让它们向后逐结点遍历。<br>
+当 pA 到达链表的尾部时，将它重定位到链表 B 的头结点 (你没看错，就是链表 B); 类似的，当 pB 到达链表的尾部时，将它重定位到链表 A 的头结点。<br>
+若在某一时刻 pA 和 pB 相遇，则 pA/pB 为相交结点。<br>
+想弄清楚为什么这样可行, 可以考虑以下两个链表: A={1,3,5,7,9,11} 和 B={2,4,9,11}，相交于结点 9。 由于 B.length (=4) &lt; A.length (=6)，pB 比 pA 少经过 2 个结点，会先到达尾部。将 pB 重定向到 A 的头结点，pA 重定向到 B 的头结点后，pB 要比 pA 多走 2 个结点。因此，它们会同时到达交点。
+如果两个链表存在相交，它们末尾的结点必然相同。因此当 pA/pB 到达链表结尾时，记录下链表 A/B 对应的元素。若最后元素不相同，则两个链表不相交。<br>
+复杂度分析<br>
+时间复杂度 : O(m+n)。<br>
+空间复杂度 : O(1)。</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */</span>
+
+<span class="token comment">/**
+ * @param {ListNode} headA
+ * @param {ListNode} headB
+ * @return {ListNode}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">getIntersectionNode</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">headA<span class="token punctuation">,</span> headB</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>headA <span class="token operator">||</span> <span class="token operator">!</span>headB<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">var</span> AStep <span class="token operator">=</span> headA<span class="token punctuation">;</span>
+  <span class="token keyword">var</span> BStep <span class="token operator">=</span> headB<span class="token punctuation">;</span>
+  <span class="token keyword">var</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>count <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>AStep <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      AStep <span class="token operator">=</span> headB<span class="token punctuation">;</span>
+      count<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>BStep <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      BStep <span class="token operator">=</span> headA<span class="token punctuation">;</span>
+      count<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>AStep <span class="token operator">===</span> BStep<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> AStep<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    AStep <span class="token operator">=</span> AStep<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    BStep <span class="token operator">=</span> BStep<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="删除链表的倒数第-n-个节点"><a href="#删除链表的倒数第-n-个节点" class="header-anchor">#</a> 删除链表的倒数第 N 个节点</h2> <p>给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。</p> <blockquote><p>示例：<br>
+给定一个链表: 1-&gt;2-&gt;3-&gt;4-&gt;5, 和 n = 2.<br>
+当删除了倒数第二个节点后，链表变为 1-&gt;2-&gt;3-&gt;5.</p></blockquote> <p><strong>方法一：递归到尾节点，然后返回，返回计数到 N，即可得到倒数第 N 个节点</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */</span>
+<span class="token comment">/**
+ * @param {ListNode} head
+ * @param {number} n
+ * @return {ListNode}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">removeNthFromEnd</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">head<span class="token punctuation">,</span> n</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> target <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> prevNode <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">function</span> <span class="token function">getNext</span><span class="token punctuation">(</span><span class="token parameter">node</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>node<span class="token punctuation">.</span>next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">getNext</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>next<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    count<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>count <span class="token operator">===</span> n<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      target <span class="token operator">=</span> node<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>count <span class="token operator">===</span> n <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      prevNode <span class="token operator">=</span> node<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">getNext</span><span class="token punctuation">(</span>head<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>prevNode<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    head <span class="token operator">=</span> target<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    prevNode<span class="token punctuation">.</span>next <span class="token operator">=</span> target<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> head<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p><strong>方法二：双指针，前一个指针先走 N 次，第二个指针再从头开始走，这样第一个指针到达链表尾部时，第二个指针就正好到达倒数第 N 个</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> <span class="token function-variable function">removeNthFromEnd</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">head<span class="token punctuation">,</span> n</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>head<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">var</span> p1 <span class="token operator">=</span> head<span class="token punctuation">;</span>
+  <span class="token keyword">var</span> p2 <span class="token operator">=</span> head<span class="token punctuation">;</span>
+  <span class="token keyword">var</span> prev <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token comment">// p1先走N次，“根据下标从0开始算”，所以用n-1判断</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    p1 <span class="token operator">=</span> p1<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    n<span class="token operator">--</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// p1移动到链表尾部</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>p1<span class="token punctuation">.</span>next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    p1 <span class="token operator">=</span> p1<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    prev <span class="token operator">=</span> p2<span class="token punctuation">;</span>
+    p2 <span class="token operator">=</span> p2<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>prev<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    head <span class="token operator">=</span> p2<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    prev<span class="token punctuation">.</span>next <span class="token operator">=</span> p2<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> head<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>作者：力扣 (LeetCode)<br>
+链接：https://leetcode-cn.com/leetbook/read/linked-list/jbex5/<br>
+来源：力扣（LeetCode）<br>
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/algorithm/3.链表/1.单链表.html" class="prev">
+        单链表
+      </a></span> <span class="next"><a href="/blog/algorithm/3.链表/3.金典问题.html">
+        金典问题
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.0ffea803.js" defer></script><script src="/blog/assets/js/2.226257d3.js" defer></script><script src="/blog/assets/js/18.db56068f.js" defer></script>
+  </body>
+</html>
